@@ -1,10 +1,7 @@
-import { Button } from '@/components/ui/button'
-import React from 'react'
+import { AdminDashboardHome } from "@/components/component/admin-dashboard-home";
+import { Button } from "@/components/ui/button";
+import React from "react";
 
 export default function page() {
-  return (
-    <div>
-      <Button>Hamza</Button>
-    </div>
-  )
+  return <AdminDashboardHome />;
 }
