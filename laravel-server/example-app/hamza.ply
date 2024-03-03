@@ -1,0 +1,5 @@
+hamza:
+  url: http://localhost:8000/api/login
+  method: POST
+  headers: {}
+  body: "{ \r\n  \"email\":\"codeonlinesource@gmail.com\",\r\n  \"password\": \"11111111\"\r\n}"
