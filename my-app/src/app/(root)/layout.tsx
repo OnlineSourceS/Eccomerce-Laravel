@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={cn("min-h-screen bg-background font-sans antialiased")}>
-        <Navbar />
+     <Navbar /> 
         <main>{children}</main>
       </body>
     </html>
