@@ -24,6 +24,7 @@ class AccessUserMiddlawre
                 $foundToken = PersonalAccessToken::findToken($token);   
     
                 $decodedUser = $foundToken->tokenable;
+                 
                 auth()->setUser($decodedUser);
                 return $next($request);
 
