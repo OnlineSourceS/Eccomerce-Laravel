@@ -1,0 +1,4 @@
+Untitled:
+  url: http://localhost:8000/api/products
+  method: GET
+  headers: {}

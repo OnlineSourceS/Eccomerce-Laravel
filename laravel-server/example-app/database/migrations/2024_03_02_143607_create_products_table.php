@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id'); // Foreign key to User model
              
+            // $table->string('images');
 
 
             $table->string('name');

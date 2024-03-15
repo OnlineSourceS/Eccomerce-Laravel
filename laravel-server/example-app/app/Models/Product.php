@@ -9,22 +9,31 @@ class Product extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name', 
+        'name',
         'description',
         'price',
         'stock',
         'ratings',
 
+    
         'user_id', // Foreign key to User model
     ];
 
-    public function reviews (){
-        return $this->hasMany(Review::class);
-    }
-     
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-    
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+
+    public function productImages()
+    {
+        return $this->hasMany(ProductImage::class);
+    }
+
+
+
 }
